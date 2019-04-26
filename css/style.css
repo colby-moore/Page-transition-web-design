@@ -1,24 +1,40 @@
+html, body {
+  font-family: "Vollkorn", serif;
+  color: white;
+}
+
 .restart {
   max-width: 32px;
   z-index: 999;
   position: absolute;
   top: 10px;
-  left: 10px; }
+  left: 10px;
+}
 
 .move-up {
-  transform: translateY(-100vh); }
-  .move-up img {
-    transition: .4s;
-    padding-bottom: 350px;
-    transform: translateY(100vh); }
+  transform: translateY(-100vh);
+}
+.move-up img {
+  transform: translateY(92.5vh);
+}
+.move-up .title {
+  z-index: 999;
+  -webkit-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -moz-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -o-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  transform: translateY(100vh) !important;
+}
 
 .outer {
   position: relative;
   height: 100vh;
   background-color: aquamarine;
-  z-index: 4; }
+  z-index: 4;
+}
 
 .inner {
+  z-index: 99;
   text-align: center;
   overflow: hidden;
   -webkit-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
@@ -30,30 +46,66 @@
   position: absolute;
   height: 100vh;
   left: 0;
-  right: 0; }
+  right: 0;
+}
+.inner .title {
+  font-size: 90px;
+  z-index: 999;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -moz-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -o-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+}
 
 .inner:nth-child(1) {
-  background: red; }
+  background: red;
+}
 
 .inner:nth-child(2) {
-  background: green; }
+  background: green;
+}
 
 .inner:nth-child(3) {
-  background: purple; }
+  background: purple;
+  display: flex;
+  flex-flow: column;
+}
+.inner:nth-child(3) img {
+  -webkit-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -moz-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -o-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  /* custom */
+  justify-items: center;
+  align-self: center;
+  max-height: 502px;
+  margin: auto;
+}
 
 .inner:nth-child(4) {
   display: flex;
   flex-flow: column;
-  background: peru; }
-  .inner:nth-child(4) img {
-    -webkit-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
-    -moz-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
-    -o-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
-    transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
-    /* custom */
-    justify-items: center;
-    align-self: center;
-    max-width: 500px;
-    margin: auto; }
+  background: #0E0E0E;
+}
+.inner:nth-child(4) img {
+  -webkit-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -moz-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  -o-transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  transition: all 750ms cubic-bezier(0.55, 0.055, 0.86, 0.325);
+  /* custom */
+  justify-items: center;
+  align-self: center;
+  max-height: 502px;
+  margin: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
