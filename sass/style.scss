@@ -1,17 +1,19 @@
 body{}
 
 .restart{
+    max-width: 32px;
     z-index: 999;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
 }
 
 .move-up{
     transform: translateY(-100vh);
     img{
-        transition: 1.5s;
-        transform: translateY(70vh);
+        transition: .4s;
+        padding-bottom: 350px;
+        transform: translateY(100vh);
     }
 }
 
@@ -23,6 +25,7 @@ body{}
 }
 
 .inner{
+    text-align: center;
     overflow: hidden;
     -webkit-transition: all 750ms cubic-bezier(0.550, 0.055, 0.860, 0.325); 
     -moz-transition: all 750ms cubic-bezier(0.550, 0.055, 0.860, 0.325); 
@@ -49,10 +52,14 @@ background: red;
 
 .inner:nth-child(4){
     display: flex;
+    flex-flow: column;
     background: peru;
 
     img{
-        transition: 1.5s;
+        -webkit-transition: all 750ms cubic-bezier(0.550, 0.055, 0.860, 0.325); 
+        -moz-transition: all 750ms cubic-bezier(0.550, 0.055, 0.860, 0.325); 
+          -o-transition: all 750ms cubic-bezier(0.550, 0.055, 0.860, 0.325); 
+             transition: all 750ms cubic-bezier(0.550, 0.055, 0.860, 0.325); /* custom */
         justify-items: center;
         align-self: center;
         max-width: 500px;
